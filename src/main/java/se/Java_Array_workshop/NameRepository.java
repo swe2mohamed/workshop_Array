@@ -28,6 +28,7 @@ public class NameRepository {
     }
 
     public static String[] findAll() {
+        // todo: Returns all names in a new array
         int count = 0;
         for (String name : names) {
             if (name != null) {
@@ -44,33 +45,31 @@ public class NameRepository {
         return notNullArray;
     }
 
-
-        // Part 2:
-        public static String find ( final String fullName){
-            //todo: Returns name if found and null if not found.
-            if (fullName != null) {
-                for (String name : names) {
-                    if (fullName.equals(name)) {
-                        return fullName;
-                    }
+    // Part 2:
+    public static String find ( final String fullName){
+        //todo: Returns name if found and null if not found.
+        if (fullName != null) {
+            for (String name : names) {
+                if (fullName.equals(name)) {
+                    return fullName;
                 }
             }
-            return null;
         }
-
-        public static boolean add(final String fullName){
-            // Should add a new name to the array. Returns true when name was added and false when the array contains the name.
-            for (int i = 0; i < names.length; i++){
-                if (names[i] != null && names[i].equals(fullName)){
-                    return false;
-                } else if (names[i] == null) {
-                    names[i] = fullName; // Add new name here
-                    return true;
-                }
-            }
-            return false;
-        }
-
+        return null;
     }
+
+    public static boolean add(final String fullName){
+        // todo: Should add a new name to the array. Returns true when name was added and false when the array contains the name.
+        for (int i = 0; i < names.length; i++){
+            if (names[i] != null && names[i].equals(fullName)){
+                return false;
+                } else if (names[i] == null) {
+                names[i] = fullName; // Add new name here
+                return true;
+            }
+        }
+        return false;
+    }
+}
 
 
