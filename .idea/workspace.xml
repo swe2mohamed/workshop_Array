@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="006653f5-2946-4c99-abef-110e6f5ac207" name="Changes" comment="First Version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/Java_Array_workshop/addName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/Java_Array_workshop/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/Java_Array_workshop/App.java" afterDir="false" />
+    <list default="true" id="006653f5-2946-4c99-abef-110e6f5ac207" name="Changes" comment="third Version">
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/Java_Array_workshop/NameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/Java_Array_workshop/NameRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +32,12 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="f62c0e3c-d851-4b52-bb59-6c423c5d0ce4" />
-        <option name="url" value="https://github.com/swe2mohamed/workshop_Array_1-2-3-4.git" />
+        <option name="url" value="git@github.com:swe2mohamed/workshop_Array.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -100,11 +102,53 @@
       <option name="project" value="LOCAL" />
       <updated>1710322030363</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Second Version">
+      <option name="closed" value="true" />
+      <created>1710350414411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710350414411</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Second Version">
+      <option name="closed" value="true" />
+      <created>1710350478772</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710350478772</updated>
+    </task>
+    <task id="LOCAL-00006" summary="third Version">
+      <option name="closed" value="true" />
+      <created>1710353613720</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710353613720</updated>
+    </task>
+    <task id="LOCAL-00007" summary="third Version">
+      <option name="closed" value="true" />
+      <created>1710353632895</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710353632895</updated>
+    </task>
+    <task id="LOCAL-00008" summary="third Version">
+      <option name="closed" value="true" />
+      <created>1710353785265</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710353785265</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Version" />
+    <MESSAGE value="Second Version" />
+    <MESSAGE value="third Version" />
+    <option name="LAST_COMMIT_MESSAGE" value="third Version" />
   </component>
 </project>
