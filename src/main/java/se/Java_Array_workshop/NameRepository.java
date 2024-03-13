@@ -1,27 +1,35 @@
 package se.Java_Array_workshop;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class NameRepository {
 
-    private static String[] names(){
-        return new String[10];
-    }
+    private static final String[] names =new String[10];
 
     // Methods
     // Part 1:
     public static int getSize(){
-        //todo:
-        // Returns number of elements in the array
+        return names.length - 1;
     }
 
     public static void setNames(String[] names){
         //todo:
         // Sends in an array that set the private static array.
         // This should replace all existing names.
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < getSize(); i++){
+            if (names[i] == null){
+                String addName = scanner.nextLine();
+                names[i] = addName;
+            }
+        }
     }
 
     public static void clear(){
         //todo:
         // Should completely empty the array.
+
     }
 
     public static String[] findAll(){
@@ -45,4 +53,6 @@ public class NameRepository {
         // false when the array contains the name.
 
     }
+
+
 }
