@@ -1,6 +1,4 @@
 package se.Java_Array_workshop;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class NameRepository {
