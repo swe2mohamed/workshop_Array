@@ -3,10 +3,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class NameRepository {
-    private static final String[] names =new String[10];
+    private static final String[] names = new String[10];
 
     // Part 1:
-    public static int getSize(){
+    public static int getSize() {
         //todo: Returns number of elements in the array
         int count = 0;
         for (String name : names) {
@@ -17,46 +17,60 @@ public class NameRepository {
         return count;
     }
 
-
     public static void setNames(String[] names) {
         //todo: Sends in an array that set the private static array.This should replace all existing names.
-        System.out.println(Arrays.toString(names));
+
     }
 
-    public static void clear(){
+    public static void clear() {
         //todo: Should completely empty the array.
-        Arrays.fill(names,null);
+        Arrays.fill(names, null);
     }
 
-    public static String[] findAll(){
-        //todo: Returns all names in a new array.
-        return Arrays.copyOf(names,getSize());
-    }
-
-    // Part 2:
-    public static String find(final String fullName){
-        //todo: Returns name if found and null if not found.
-        for (int i = 0; i < getSize(); i++){
-            if (names[i].equals(fullName)){
-                return fullName;
+    public static String[] findAll() {
+        int count = 0;
+        for (String name : names) {
+            if (name != null) {
+                count += 1;
             }
         }
-        return null;
+        String[] notNullArray = new String[count];
+        int index = 0;
+        for (String name : names) {
+            if (name != null) {
+                notNullArray[index++] = name;
+            }
         }
-    public static boolean add(final String fullName){
-        //todo:
-        // Should add a new name to the array.
-        // Returns true when name was added
-        // and
-        // false when the array contains the name.
-        Scanner scanner = new Scanner(System.in);
-        fullName = scanner.nextLine();
-        if (find(fullName) == null){
+        return notNullArray;
+    }
 
+
+        // Part 2:
+        public static String find ( final String fullName){
+            //todo: Returns name if found and null if not found.
+            if (fullName != null) {
+                for (String name : names) {
+                    if (fullName.equals(name)) {
+                        return fullName;
+                    }
+                }
+            }
+            return null;
         }
 
+        public static boolean add(final String fullName){
+            // Should add a new name to the array. Returns true when name was added and false when the array contains the name.
+            for (int i = 0; i < names.length; i++){
+                if (names[i] != null && names[i].equals(fullName)){
+                    return false;
+                } else if (names[i] == null) {
+                    names[i] = fullName; // Add new name here
+                    return true;
+                }
+            }
+            return false;
+        }
 
     }
 
 
-}
