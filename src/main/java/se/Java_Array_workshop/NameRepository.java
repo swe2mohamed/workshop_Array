@@ -1,9 +1,8 @@
 package se.Java_Array_workshop;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class NameRepository {
-    private static final String[] names = new String[10];
+    private static String[] names = new String[0];
 
     // Part 1:
     public static int getSize() {
@@ -19,7 +18,7 @@ public class NameRepository {
 
     public static void setNames(String[] names) {
         //todo: Sends in an array that set the private static array.This should replace all existing names.
-
+        NameRepository.names = Arrays.copyOf(names, names.length);
     }
 
     public static void clear() {
