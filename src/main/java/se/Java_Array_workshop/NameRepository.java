@@ -136,6 +136,18 @@ public class NameRepository {
         }
         return false;
     }
+
+    public static boolean remove(final String fullName) {
+        // todo: Should remove a name from the array. Returns true if name was removed and false if the name was not remove for some reason.
+        String[] names = NameRepository.names;
+        for (int i = 0; i < names.length; i++) {
+            if (names[i].equals(fullName)) {
+                names[i] = null;
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 
