@@ -82,19 +82,37 @@ public class NameRepository {
                     count += 1;
                 }
         }
-        String[] findFirstNameArray = new String[count];
+        String[] findLastNameArray = new String[count];
         int index = 0;
         for (String name : fullNameArray) {
             String[] fullName = name.split(" ");
             if (Objects.equals(fullName[0], firstName)) {
-                findFirstNameArray[index] = name;
+                findLastNameArray[index] = name;
                 index++;
             }
+        }
+        return findLastNameArray;
+    }
+
+    public static String[] findByLastName(final String lastName){
+        // todo: Searches the array trying to find all names that has passed in last name. Returns a String array containing all.
+        int count = 0;
+        String[] fullNameArray = NameRepository.names;
+        for (String name : fullNameArray) {
+            String[] fullName = name.split(" ");
+            if (Objects.equals(fullName[fullName.length - 1], lastName)) {
+                count += 1;
             }
-        return findFirstNameArray;
+        }
+        String[] findLastNameArray = new String[count];
+        int index = 0;
+        for (String name : fullNameArray) {
+            String[] fullName = name.split(" ");
+            if (Objects.equals(fullName[fullName.length - 1], lastName)) {
+                findLastNameArray[index] = name;
+                index++;
+            }
+        }
+        return findLastNameArray;
     }
 }
-
-
-
-
